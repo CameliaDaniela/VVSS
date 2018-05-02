@@ -20,7 +20,7 @@ public class RepositoryContactFile implements RepositoryContact {
 
 	public RepositoryContactFile() throws Exception {
 		contacts = new LinkedList<Contact>();
-		BufferedReader br = null;
+		/*BufferedReader br = null;
 //		String currentDir = new File(".").getAbsolutePath();
 //		System.out.println(currentDir);
 		try {
@@ -45,7 +45,15 @@ public class RepositoryContactFile implements RepositoryContact {
 		}finally
 		{
 			if (br != null) br.close();
-		}
+		}*/
+		Contact c=null;
+		c= Contact.fromString("name1#address1#0756745678#", "#");
+		contacts.add(c);
+        c= Contact.fromString("camel#adress#0756745830#", "#");
+        contacts.add(c);
+        c= Contact.fromString("contactt#adresaaaa#0756434532", "#");
+        contacts.add(c);
+
 	}
 
 	@Override

@@ -16,13 +16,13 @@ import ccir2020MV.model.repository.interfaces.RepositoryContact;
 
 public class RepositoryActivityFile implements RepositoryActivity{
 
-	private static final String filename = "files\\activities.txt";//aici a fost dat
+	private static final String filename = "ccir2020\\files\\activities.txt";//aici a fost dat
 	private List<Activity> activities;
 	
 	public RepositoryActivityFile(RepositoryContact repcon) throws Exception
 	{
 		activities = new LinkedList<Activity>(); 
-		//DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+		/*//DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 		BufferedReader br = null;
 		try {
 			br = new BufferedReader(new InputStreamReader(new FileInputStream(filename)));
@@ -41,8 +41,15 @@ public class RepositoryActivityFile implements RepositoryActivity{
 			e.printStackTrace();
 		}finally{
 			if (br!=null) br.close();
-		}
-	}
+		}*/
+		Activity activity=Activity.fromString("Camelia#1355306420037#1355310020037#dasd#", repcon);
+		activities.add(activity);
+		activity=Activity.fromString("name1#1363775400000#1363777200000#description2#", repcon);
+		activities.add(activity);
+        activity=Activity.fromString("Camelia#1391853600662#1397030400662#dfghjk#", repcon);
+        activities.add(activity);
+
+    }
 	
 	@Override
 	public List<Activity> getActivities() {

@@ -20,7 +20,7 @@ public class RepositoryUserFile implements RepositoryUser{
 	public RepositoryUserFile() throws Exception 
 	{
 		users = new LinkedList<User>();
-		BufferedReader br = null;
+		/*BufferedReader br = null;
 		try {
 			br = new BufferedReader(new InputStreamReader(new FileInputStream(filename)));
 			String line;
@@ -38,7 +38,9 @@ public class RepositoryUserFile implements RepositoryUser{
 			e.printStackTrace();
 		}finally{
 			if (br!=null) br.close();
-		}
+		}*/
+		User u = User.fromString("Camelia#camelia#parola");
+		users.add(u);
 	}
 	
 	@Override
