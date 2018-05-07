@@ -6,17 +6,13 @@ import ccir2020MV.model.base.Contact;
 import ccir2020MV.model.repository.classes.RepositoryActivityFile;
 import ccir2020MV.model.repository.classes.RepositoryContactFile;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.Assert.fail;
-
-public class BigBangTest {
-
+public class TopDownIntegration {
     @Test
     public void testA()  {
         RepositoryContactFile repositoryContactFile=null;
@@ -29,53 +25,14 @@ public class BigBangTest {
         try {
             repositoryContactFile.adaugContact("Nume","address","0756745830");
         } catch (InvalidFormatException e) {
-            message=e.getCause().getMessage();
+          Assert.fail();
         }
-         Assert.assertEquals("",message);
+        Assert.assertEquals("",message);
 
     }
     @Test
-    public void testB(){
-        RepositoryActivityFile repositoryActivityFile = null;
-        try {
-            repositoryActivityFile =new RepositoryActivityFile(new RepositoryContactFile());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        Calendar c=Calendar.getInstance();
-        c.set(2012, Calendar.JANUARY,12,12,12,0);
-        Date start=c.getTime();
-        c.set(2012,Calendar.JANUARY,14,13,10,0);
-        Date end=c.getTime();
-        List<Contact> cl= null;
-        Activity a=new Activity("Camelia", start, end,cl,"descr" );
-        Assert.assertTrue(repositoryActivityFile.addActivity(a));
-
-    }
-    @Test
-    public void testC(){
-        RepositoryActivityFile repositoryActivityFile =null;
-        try {
-            repositoryActivityFile =new RepositoryActivityFile(new RepositoryContactFile());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        Calendar c=Calendar.getInstance();
-        c.set(2012,Calendar.JANUARY,12,12,12,0);
-        Date start=c.getTime();
-        c.set(2012,Calendar.JANUARY,14,13,10,0);
-        Date end=c.getTime();
-        List<Contact> l=null;
-        Activity a=new Activity("Camelia", start, end,l,"descr" );
-        repositoryActivityFile.addActivity(a);
-        c.set(2012,Calendar.JANUARY,14);
-        Date d=c.getTime();
-        List<Activity> result1=repositoryActivityFile.activitiesOnDate("Camelia",d);
-        Assert.assertEquals(1,result1.size());
-    }
-    @Test
-    public void Integration(){
-        boolean intA=false,intB=false,intC=false;
+    public void testAIntB(){
+        boolean intA=false,intB;
         RepositoryContactFile repositoryContactFile=null;
         RepositoryActivityFile repositoryActivityFile=null;
         String message="";
@@ -85,13 +42,44 @@ public class BigBangTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        int len=repositoryContactFile.getContacts().size();
         try {
             repositoryContactFile.adaugContact("Nume","address","0756745830");
         } catch (InvalidFormatException e) {
-            message=e.getCause().getMessage();
+            e.printStackTrace();
+        }
+        if(repositoryContactFile.getContacts().size()==len+1)
+            intA=true;
+        Calendar c=Calendar.getInstance();
+        c.set(2012, Calendar.JANUARY,12,12,12,0);
+        Date start=c.getTime();
+        c.set(2012,Calendar.JANUARY,14,13,10,0);
+        Date end=c.getTime();
+        List<Contact> cl= null;
+        Activity a=new Activity("Camelia", start, end,cl,"descr" );
+        intB=repositoryActivityFile.addActivity(a);
+        Assert.assertTrue(intA&&intB);
+    }
+    @Test
+    public void IntegrationABC(){
+        boolean intA=false,intB=false,intC=false;
+        RepositoryContactFile repositoryContactFile=null;
+        RepositoryActivityFile repositoryActivityFile=null;
+        String m="";
+        try {
+            repositoryContactFile=new RepositoryContactFile();
+            repositoryActivityFile=new RepositoryActivityFile(new RepositoryContactFile());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        int len=repositoryContactFile.getContacts().size();
+        try {
+            repositoryContactFile.adaugContact("Nume","address","0756745830");
+        } catch (InvalidFormatException e) {
+
             Assert.fail();
         }
-        if(message.equals(""))
+        if(repositoryContactFile.getContacts().size()==len+1)
             intA=true;
         Calendar c=Calendar.getInstance();
         c.set(2012, Calendar.JANUARY,12,12,12,0);

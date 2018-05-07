@@ -133,7 +133,7 @@ public class MainClass {
 			String dateE = in.readLine();
 			System.out.printf("End Time(hh:mm): ");
 			String timeE = in.readLine();
-			
+
 			c.set(Integer.parseInt(dateE.split("/")[2]),
 					Integer.parseInt(dateE.split("/")[0]) - 1,
 					Integer.parseInt(dateE.split("/")[1]),
