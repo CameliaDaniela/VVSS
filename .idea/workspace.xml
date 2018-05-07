@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8822cd7a-9d0c-47d6-b6bc-b42a9fa888ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ccir2020MV/TopDownIntegration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ccir2020MV/BigBangTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ccir2020MV/BigBangTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ccir2020MV/startApp/MainClass.java" afterPath="$PROJECT_DIR$/src/main/java/ccir2020MV/startApp/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ccir2020MV/BigBangTest.java" afterPath="$PROJECT_DIR$/src/test/java/ccir2020MV/BigBangTest.java" />
-    </list>
+    <list default="true" id="8822cd7a-9d0c-47d6-b6bc-b42a9fa888ec" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,18 +65,18 @@
       <file leaf-file-name="BigBangTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ccir2020MV/BigBangTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
+            <state relative-caret-position="1701">
               <caret line="76" column="27" lean-forward="false" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopDownIntegration.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ccir2020MV/TopDownIntegration.java">
+      <file leaf-file-name="TopDownTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ccir2020MV/TopDownTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-556">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="1242">
+              <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="63" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ccir2020MV/BBTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ccir2020MV/BigBangTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ccir2020MV/TopDownIntegration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ccir2020MV/TopDownTest.java" />
       </list>
     </option>
   </component>
@@ -330,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TopDownIntegration">
+  <component name="RunManager" selected="JUnit.TopDownTest">
     <configuration name="BigBangTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -406,7 +401,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TopDownIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TopDownTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ccir2020MV.*" />
@@ -417,7 +412,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ccir2020MV" />
-      <option name="MAIN_CLASS_NAME" value="ccir2020MV.TopDownIntegration" />
+      <option name="MAIN_CLASS_NAME" value="ccir2020MV.TopDownTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -431,7 +426,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TopDownIntegration.testA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TopDownTest.testA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="ccir2020MV.*" />
@@ -442,7 +437,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="ccir2020MV" />
-      <option name="MAIN_CLASS_NAME" value="ccir2020MV.TopDownIntegration" />
+      <option name="MAIN_CLASS_NAME" value="ccir2020MV.TopDownTest" />
       <option name="METHOD_NAME" value="testA" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -541,13 +536,13 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.BigBangTest.testI" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BigBangTest.Integration" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.BigBangTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TopDownIntegration" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TopDownIntegration.testA" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TopDownTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TopDownTest.testA" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TopDownIntegration" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TopDownIntegration.testA" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TopDownTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TopDownTest.testA" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.BigBangTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.BigBangTest.testI" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.BigBangTest.Integration" />
@@ -594,7 +589,7 @@
       <workItem from="1525258027286" duration="3460000" />
       <workItem from="1525340802052" duration="756000" />
       <workItem from="1525369311181" duration="7038000" />
-      <workItem from="1525680294805" duration="504000" />
+      <workItem from="1525680294805" duration="1004000" />
     </task>
     <servers />
   </component>
@@ -631,7 +626,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68770000" />
+    <option name="totallyTimeSpent" value="69270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -1190,16 +1185,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ccir2020MV/BigBangTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
+        <state relative-caret-position="1701">
           <caret line="76" column="27" lean-forward="false" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ccir2020MV/TopDownIntegration.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ccir2020MV/TopDownTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-556">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="1242">
+          <caret line="46" column="14" lean-forward="false" selection-start-line="46" selection-start-column="14" selection-end-line="63" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

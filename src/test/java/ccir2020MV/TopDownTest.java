@@ -12,7 +12,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class TopDownIntegration {
+public class TopDownTest {
     @Test
     public void testA()  {
         RepositoryContactFile repositoryContactFile=null;
